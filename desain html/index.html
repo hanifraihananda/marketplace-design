@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type:"text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500|Work+Sans:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="nav-top-menu">
+            <ul class="topnav">
+                <li class="li-SignOut"><a style="font-size: 30px;">WEBSITE NAME</a><br><p style="font-family:'Hind', sans-serif;">little desc</p></li>
+                <li class="li-a"><a><input type="text" placeholder="search" id="search"></a></li>
+                <li class="li-a"><a clas>logo</a></li>
+                <li class="li-a"><a>0 items-Rp0</a></li>
+            </ul>
+        </div>
+    </header>
+    <header>
+        <div class="nav-bottom-menu">
+            <ul class="topnav">
+                <li class="li-a"><a>HOME</a></li>
+                <li class="li-a"><a>STORE</a></li>
+                <li class="li-a"><a>PRODUCT</a></li>
+                <li class="li-a"><a>ABOUT</a></li>
+                <li class="li-a"><a>TIPS</a></li>
+                <li class="li-SignOut"><a>LOGOUT</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="slider">
+        <img class="mySlides" src="image/download.png" style="width:100%">
+        <img class="mySlides" src="image/Grocery.jpg" style="width:100%">
+        <img class="mySlides" src="image/IC-11-Zenthy-Food-Market-08.jpg" style="width:100%">
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+    <div>
+        <p>halo</p>
+    </div>
+</body>
+</html>
